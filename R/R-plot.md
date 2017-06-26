@@ -39,4 +39,27 @@ plot(data, opt1=st, opt2=st2...)
 ```R
 - title()   # title, main and sub
 - axis()    # should set axes=FALSE
+    side    #side of axis, (1=down, 2=left, 3=up, 4=right)
+    at      #where ticks place
+    labels  # label of ticks
+    pos     # value of corss axis
+    lty     # line type
+    col     # color
+    las     # label postion, 0=parallel, 2=perpendicular 
+    tck     #tick length, +number:above the axis, -number:down, 0:no ticks
+    ...
+- abline()  # 回归线
+- legend（location, title, legend）# 图例
+- text()
+- mtext()
+
+```
+
+# 图形组合
+```r
+par(mfrow=c(nrows,ncols))
+
+layout(mat)
+fig=c(a,b,c,d) #精细控制图形布局
+```
 
